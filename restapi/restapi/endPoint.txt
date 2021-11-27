@@ -1,0 +1,45 @@
+
+// This Create end point create new team and player use by team control method\
+
+1. Create      - Team, Player  
+
+public List<Team> getTeam()      //This Method Create New Player and Team in End point 
+public List<Player> getPlayer()
+
+
+
+
+
+//This Find By Id EndPoint Method Use for search Team and Player by PlayerID  and TeamID 
+
+2. Find by Id - Team, Player
+
+public Team getTeam(@PathVariable long teamId)  //This EndPoint Method Search player and team by playerId and teamId  
+
+public Player getPlayer(@PathVariable  int playerId)
+
+
+
+
+//This End Point Method using for update the team and player by user put request
+3. update      - Team , Player
+
+public Team updateTeam(@RequestBody Team team)   //This End Point Method use for update the Player and team by RequestBody  
+
+public Team updatePlayer(@RequestBody Player player)
+
+
+
+
+//this End Point Method using for delete the existing team and player by user delete request
+4. delete       - Team , Player
+public ResponseEntity<HttpStatus> deleteTeam(@PathVariable int teamId) //This method use for delete the player and team 
+public ResponseEntity<HttpStatus> deletePlayer(@PathVariable long playerId)
+
+
+
+
+//This End Point Method using for get All Player and Team By User Get request
+5. List            - Team , Player  
+public List<Team> getTeam()
+public List<Player> getPlayer()
